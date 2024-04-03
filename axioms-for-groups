@@ -1,0 +1,41 @@
+Grupp
+=====
+
+Du är nog mycket väl bekant med vad en matematisk mängd är. Med en mängd såsom \\(\\{25, \\text{broccoli}, \\text{filosofi}, \\text{spaghetti}\\}\\) menas en samling med fyra element (objekt) vars namn (etiketter) är ”25”, ”broccoli”, ”filosofi” och ”spaghetti”. Om inget särskilt anges utgör dessa namn helt enkelt bara en lista och vi har inte så mycket mer att göra.
+
+En matematisk grupp kan ses som ett slags utvidgning av mängd, där vi förser mängden med en **binär operator** \\(\*\\) och tillåter elementen i mängden att interagera med varandra på något bestämt sätt.
+
+**Definition:** Låt \\(G\\) vara en mängd och \\(\*\\) en binär operator. Den algebraiska strukturen \\((G,\*)\\) sägs vara en **grupp** om följande fyra axiomatiska villkor är uppfyllda:
+
+**G1.** Slutenhet: för alla \\(x,y \\in G\\) gäller \\(x \* y \\in G\\)
+
+**G2.** Associativitet: för alla \\(x,y,z \\in G\\) gäller \\((x \* y) \* z = x \* (y \* z)\\)
+
+**G3.** Identitet: för alla \\(x \\in G\\), existerar ett \\(e \\in G\\) sådant att \\(x \* e = e \* x = x\\)
+
+**G4.** Invers: för varje \\(x \\in G\\), existerar ett \\(a \\in G\\) sådant att \\(x \* a = a \* x = e\\)
+
+**Anmärkning:** 1) I praktiken betecknas oftast \\(a = x^{-1}\\) (i **G4**).
+
+2) Om en grupp \\((G,\*)\\) redan introducerats i sammanhanget kan gruppen i fortsättningen betecknas \\(G\\), för enkelhetens skull.
+
+3) Operationen \\(x \* y\\) kan även skrivas \\(xy\\) och identitetselementet \\(e\\) kan även skrivas \\(1\\), så länge problemlösaren är medveten om vilken operator som är aktuell i sammanhanget.
+
+* * *
+
+Delgrupp
+========
+
+I analogi med begreppet **delmängd** i förhållande till en mängd kan vi bilda begreppet **delgrupp** i förhållande till en grupp.
+
+**Definition:** Låt \\((G,\*)\\) vara en grupp. En mängd \\(H\\) sägs vara en delgrupp till \\(G\\) om \\(H \\subseteq G\\) och \\((H,\*)\\) är en grupp.
+
+**Sats:** Om \\(G\\) är en grupp och \\(H \\subseteq G\\), kan \\(H\\) bevisas vara en delgrupp till \\(G\\) genom att följande tre villkor bevisas:
+
+**S0.** \\(H \\neq \\varnothing\\)
+
+**S1.** om \\(x,y \\in H\\) så \\(x \* y \\in H\\)
+
+**S2.** om \\(x \\in H\\) så \\(x^{-1} \\in H\\)
+
+Om \\(H\\) är en ändlig mängd räcker det med att bara **S0** och **S1** bevisas.
